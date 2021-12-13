@@ -6,10 +6,10 @@
   justify-content: space-between;
 }
 
-.header > div {
+.header > .navItems > div {
   margin: 10px;
 }
-.header > div > div {
+.header > .navItems > div > div {
   margin: 10px;
 }
 
@@ -62,4 +62,27 @@
   padding: 15px 40px;
   border-radius: 50px;
   color: #000;
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* .navToggle {
+  display: none;
+} */
+
+@media screen and (max-width: 1000px) {
+  .navItems {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navItems {
+    display: none;
+  }
 }
