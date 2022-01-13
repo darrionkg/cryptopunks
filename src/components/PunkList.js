@@ -2,14 +2,12 @@ import React from 'react'
 import CollectionCard from './CollectionCard'
 import './PunkList.css'
 
-const PunkList = ({ punkListData }) => {
-
-  const newPunkListData = punkListData.filter(punk => punk.id !== 19199595);
+const PunkList = ({ punkListData, setSelectedPunk }) => {
 
   return (
     <div className='punkList'>
-      {newPunkListData.map(punk =>
-        <div onClick={() => console.log(punk.token_id)}>
+      {punkListData.map(punk =>
+        <div onClick={() => setSelectedPunk(punk.token_id)}>
           <CollectionCard
             key={punk.token_id}
             id={punk.token_id}

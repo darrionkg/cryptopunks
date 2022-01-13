@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.css'
-import punkLogo from '../assets/cryptopunk-logo.png'
-import search from '../assets/search.png'
-import themeSwitch from '../assets/theme-switch.png'
+import punkLogo from '../assets/header/cryptopunk-logo.png'
+import search from '../assets/header/search.png'
+import themeSwitch from '../assets/header/theme-switch.png'
 
 const Header = () => {
   return (
